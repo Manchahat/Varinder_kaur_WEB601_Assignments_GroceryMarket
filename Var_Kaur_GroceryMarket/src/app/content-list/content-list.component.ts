@@ -14,7 +14,7 @@ export class ContentListComponent {
     { id: 3, title: 'Vegetables', description: 'Fresh and Reasonable price', creator: 'Grocery Market', imgURL: 'https://m.media-amazon.com/images/I/61jpDWkdEoL._AC_SX679_.jpg', type: 'Grocery Item', tags: ['Green', 'Frozen'] },
     { id: 4, title: ' Dove Shampoo', description: 'Reduce  Hair Fall', creator: 'Grocery Market', imgURL: 'https://m.media-amazon.com/images/I/61OERxg6W1L._AC_SX679_.jpg', type: 'Grocery Item', tags: ['small packing', 'Large packing'] },
     { id: 5, title: 'Chicken and Meat', description: 'Packaged', creator: 'Grocery Market', imgURL: 'https://cdn.shopify.com/s/files/1/0520/1543/1841/products/Fresh-Halal-Chicken-Boneless-Roaster-Breasts-Protein-Fresh-Fresh-Halal-Chicken-Boneless-Roaster-Breasts-Protein-Fresh-Fresh-Halal-Chicken-Boneless-Roaster-Breasts-Protein-Fresh-Fresh_bb9dd17e-257c-4b8b-85b3-cc9736defba7_700x.jpg?v=1671159852', type: 'Grocery Item', tags: ['Bacon', 'Sausages'] },
-    
+    { id: 6, title: 'Cosmetics', description: 'Every Brand is available and full of quality', creator: 'Grocery Market', imgURL: 'https://www.gosupps.com/media/catalog/product/7/1/71Axd0y3QXL.jpg', type: 'Grocery Item', tags: ['Make-up', 'Accessories'] },
   ];
   constructor() { }
 
