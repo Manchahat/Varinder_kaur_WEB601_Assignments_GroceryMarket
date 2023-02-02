@@ -1,0 +1,26 @@
+<div class="wrap">
+    <div *ngIf="isfirst==true" class="cardhigh">
+        <h1>    {{contentCard.title}}</h1> 
+        
+        <img (click)="callConsole(contentCard)" src="{{contentCard.imgURL}}">
+         
+        <p>{{contentCard.description}}</p>
+         
+      <p>{{contentCard.creator}}</p>
+      <p>{{contentCard.type}}</p>
+      <p>{{contentCard.tags}}</p>
+        
+        
+      </div>
+    <div *ngIf="isfirst==false"   class="card">
+        <h1>    {{contentCard.title}}</h1> 
+    
+      <img (click)="callConsole(contentCard)"  src="{{contentCard.imgURL}}">
+       
+      <p>{{contentCard.description}}</p>
+      <p>{{contentCard.creator}}</p>
+      <p>{{contentCard.type}}</p>
+      <p>{{contentCard.tags}}</p>
+      
+    </div>
+    </div>
