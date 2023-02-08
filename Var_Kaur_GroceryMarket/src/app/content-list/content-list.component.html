@@ -1,0 +1,42 @@
+
+<form>
+
+  <label>Search title: </label>
+    <input type="text" class="inputvalue" [(ngModel)]="searchFormcontent.title" name="title">
+    <button type="button" class="button" (click)="Searchproduct()">Search</button>
+  </form>
+  <br>
+  
+  <div *ngIf="Searchlist">
+    <div *ngIf="(contentList|filterWithContent:Searchlist).total != 0; else notFoundBlock">
+      <p class="found">Result: Item Exist {{(contentList|filterWithContent:Searchlist).total}}</p>
+      <blockquote>
+        <ul>
+          <li *ngFor="let item of (contentList|filterWithContent:Searchlist).results">{{item.title}}</li>
+        </ul>
+      </blockquote>
+    </div>
+  
+    <ng-template #notFoundBlock>
+      <p class="not-found">Item Does Not Exist</p>
+    </ng-template>
+  </div>
+  
+  <div class="headingGrocery"><h3>Grocery</h3></div>
+  
+  <div class="content-list-container">
+    <app-content-card [selectedTittle]="Searchlist?.title"  *ngFor="let item of contentList|filterWithType:'Grocery'; first as isFirst" [content]="item"
+      [isFirst]="isFirst" class="grocery"></app-content-card>
+  </div>
+  
+  <div class="headingcosmetic"><h3>Cosmetic</h3></div>
+  <div class="content-list-container">
+    <app-content-card  [selectedTittle]="Searchlist?.title" *ngFor="let item of contentList|filterWithType:'Cosmetic'; first as isFirst" [content]="item"
+      [isFirst]="isFirst" class="cosmetic"></app-content-card>
+  </div>
+  
+  <div class="headingnotype"><h3>No Type</h3></div>
+  <div class="content-list-container">
+    <app-content-card  [selectedTittle]="Searchlist?.title" *ngFor="let item of contentList|filterWithType; first as isFirst" [content]="item" [isFirst]="isFirst"
+      class="no-type"></app-content-card>
+  </div>

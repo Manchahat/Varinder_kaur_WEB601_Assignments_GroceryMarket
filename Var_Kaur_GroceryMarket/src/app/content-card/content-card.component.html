@@ -1,0 +1,18 @@
+<div class="card {{isFirst && 'first'}}" [ngClass]="content?.title?.trim()?.toLowerCase()==selectedTittle?.trim()?.toLowerCase()?'selected':'card'">
+  <img *ngIf="content?.imgURL" src="{{content?.imgURL}}" (click)="titledetail(content)">
+  <div class="container">
+    <h4><b>{{content?.title}}</b></h4>
+    <p>Description: {{content?.description}}</p>
+    <p>Creator: {{content?.creator}}</p>
+    <p *ngIf="content?.type">Type: {{content?.type}}</p>
+    <p *ngIf="content?.tags">
+      Tag: <span [ngClass]="{'tag_Grocery': content?.type == 'Grocery',
+                              'tag_Cosmetic': content?.type == 'Cosmetic',
+                              'tag_Notype': content?.type == null}" *ngFor="let tag of content?.tags">{{tag}}</span>
+
+
+    </p>
+
+
+  </div>
+</div>
