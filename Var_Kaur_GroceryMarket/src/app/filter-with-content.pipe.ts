@@ -6,6 +6,7 @@ import { FindContent, FindResults } from './helper-files/find-content-interface'
 @Pipe({
   name: 'filterWithContent'
 })
+
 export class FilterWithContentPipe implements PipeTransform {
 
   transform(contentList: Content[], searchObject: FindContent | null): FindResults {
