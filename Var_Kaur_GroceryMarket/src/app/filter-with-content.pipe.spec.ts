@@ -5,4 +5,5 @@ describe('FilterWithContentPipe', () => {
     const pipe = new FilterWithContentPipe();
     expect(pipe).toBeTruthy();
   });
+  
 });
