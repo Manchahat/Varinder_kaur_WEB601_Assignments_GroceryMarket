@@ -4,6 +4,7 @@ import { Content } from './helper-files/content-interface';
 @Pipe({
   name: 'filterWithType'
 })
+
 export class FilterWithTypePipe implements PipeTransform {
 
   transform(contentList: Content[], type?: string): Content[] {
