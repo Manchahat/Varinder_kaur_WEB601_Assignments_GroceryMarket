@@ -5,4 +5,5 @@ describe('HoverAffectDirective', () => {
     const directive = new HoverAffectDirective();
     expect(directive).toBeTruthy();
   });
+  
 });
