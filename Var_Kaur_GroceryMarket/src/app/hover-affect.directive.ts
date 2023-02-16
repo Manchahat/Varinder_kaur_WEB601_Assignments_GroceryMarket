@@ -9,8 +9,7 @@ export class HoverAffectDirective {
   originalBorder: string='';
   constructor(private el: ElementRef, private renderer: Renderer2) { }
 
-  
-  @HostListener('mouseenter') onMouseEnter() {
+   @HostListener('mouseenter') onMouseEnter() {
     if (this.appHoverAffect === 'boldandborder') {
       this.renderer.setStyle(this.el.nativeElement, 'font-weight', 'bold');
       this.renderer.setStyle(this.el.nativeElement, 'cursor', 'pointer');
