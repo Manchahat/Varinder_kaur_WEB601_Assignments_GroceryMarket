@@ -8,10 +8,9 @@ import { NgModule } from '@angular/core';
   templateUrl: './content-card.component.html',
   styleUrls: ['./content-card.component.scss'],
 
-  })
+})
 
- 
-export class ContentCardComponent {
+ export class ContentCardComponent {
   @Input() isFirst: boolean = false;
   @Input() isLast: boolean = false;  
   @Input() selectedType: any = '';
