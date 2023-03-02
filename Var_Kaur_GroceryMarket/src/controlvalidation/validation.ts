@@ -1,5 +1,6 @@
 import { Error } from 'src/app/helper-files/error-interface';
 
+
 export const validateCreateNewContent = (item: any): Error => {
 	const error: Error = { isError: false, message: '' };
 
