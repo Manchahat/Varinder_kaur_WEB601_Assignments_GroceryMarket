@@ -13,10 +13,7 @@
                               'tag_Cosmetic': content?.type == 'Cosmetic',
                               'tag_Notype': content?.type == null}" *ngFor="let tag of content?.tags ; first as isFirst; last as isLast">{{tag}}</span>
 
-                              
-
-
-    </p>
+</p>
 
     <p *ngIf="content?.tags && (!isFirst && !isLast)">
       Tag: <span   appHoverAffect="bold"   [ngClass]="{'tag_Grocery': content?.type == 'Grocery',
