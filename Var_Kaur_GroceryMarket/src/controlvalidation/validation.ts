@@ -17,6 +17,7 @@ export const validateCreateNewContent = (item: any): Error => {
 		error.isError = true;
 		error.message = ' Please Fill Creator.Creator cannot be empty';
 	}
+	
 
 	return error;
 };
