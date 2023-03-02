@@ -44,6 +44,7 @@ export class CreateContentComponent {
 			if (error.isError) fail(error);
 			else success(newContent);
 		});
+		
 
 		promiseRequest
 			.then((res) => {
