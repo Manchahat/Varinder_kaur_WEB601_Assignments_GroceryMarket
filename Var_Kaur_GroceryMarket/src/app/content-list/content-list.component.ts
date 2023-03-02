@@ -89,6 +89,7 @@ export class ContentListComponent {
   ngOnInit() {
 
   }
+  
 
   Searchproduct() {
     this.Searchlist = { ...this.searchFormcontent };
