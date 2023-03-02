@@ -1,0 +1,58 @@
+ 
+		 
+		form {
+            
+			background-color: #fff;
+			max-width: 700px;
+			 
+            margin: 20px;
+			padding: 10px 10px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 5px;
+
+		}
+
+		/* Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		 	/* input box */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 5px;
+			font-family: inherit;
+			padding: 5px;
+			display: block;
+			width: 95%;
+		}
+
+	 
+
+		/*   Button */
+		button {
+            background-color: #4CAF50; /* Green */
+            border:  solid black 1px;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            text-decoration: none;
+             border-radius: 3px;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+		}
+        .errros{
+
+            color: red;
+        }
