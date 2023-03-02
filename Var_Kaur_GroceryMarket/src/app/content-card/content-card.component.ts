@@ -8,10 +8,6 @@ import { NgModule } from '@angular/core';
   templateUrl: './content-card.component.html',
   styleUrls: ['./content-card.component.scss'],
 
-  
- 
-   
- 
 })
 
  
