@@ -18,10 +18,7 @@ import { CreateContentComponent } from './create-content/create-content.componen
     ContentCardComponent,
     HoverAffectDirective,
     CreateContentComponent
-     
-     
-
-  ],
+ ],
   exports: [
     ContentCardComponent,
     HoverAffectDirective
