@@ -17,6 +17,7 @@ export class ProductService {
 		const productList = contentList.find((item) => {
 			return item.id === id;
 		});
+		
 		return of(productList);
 	}
 
