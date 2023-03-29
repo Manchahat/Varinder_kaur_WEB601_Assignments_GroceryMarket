@@ -6,6 +6,7 @@ import { Content } from '../helper-files/content-interface';
   templateUrl: './modify-content-component.component.html',
   styleUrls: ['./modify-content-component.component.scss']
 })
+
 export class ModifyContentComponentComponent {
   @Output() addNewContentEvent = new EventEmitter<Content>();
 
@@ -36,6 +37,7 @@ export class ModifyContentComponentComponent {
 			type: this.type,
 			tags: this.tags ? this.tags.split(',') : [],
 		};
+		
 		this.addNewContentEvent.emit(newContent);
 		this.resetForm();
 	}
