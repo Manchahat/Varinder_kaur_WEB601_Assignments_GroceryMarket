@@ -65,8 +65,6 @@ export let contentList: Content[] = [
 
       tags: ['chicken', 'meat'],
       isSelected: false
-
-
     },
 
   ];
