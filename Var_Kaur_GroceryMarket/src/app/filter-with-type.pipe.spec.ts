@@ -5,4 +5,5 @@ describe('FilterWithTypePipe', () => {
     const pipe = new FilterWithTypePipe();
     expect(pipe).toBeTruthy();
   });
+  
 });
