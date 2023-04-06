@@ -1,0 +1,32 @@
+.outline {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    border-radius: 5px;
+    padding: 7px;
+  }
+  .inputvalue{
+
+    width: 26%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border:  solid black 1px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+     border-radius: 3px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+     
+  }
+  .divcont{
+    margin-top: 600px;
+  }
