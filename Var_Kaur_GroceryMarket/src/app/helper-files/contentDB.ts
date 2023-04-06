@@ -55,6 +55,7 @@ export let contentList: Content[] = [
       type: 'Cosmetic',
       tags: ['Make-up', 'Acessories']
     },
+    
 
     {
       id: 7,
