@@ -6,7 +6,6 @@ import { ModifyContentComponentComponent } from './modify-content-component/modi
 import { ContentdetailComponent } from './contentdetail/contentdetail.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
-
 const routes: Routes = [
   {
     path: '', redirectTo:'/list', pathMatch:'full'
