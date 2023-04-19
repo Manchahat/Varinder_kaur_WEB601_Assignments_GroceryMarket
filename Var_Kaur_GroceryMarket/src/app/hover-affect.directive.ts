@@ -3,6 +3,7 @@ import { Directive, ElementRef, Renderer2, HostListener, Input } from '@angular/
 @Directive({
   selector: '[appHoverAffect]'
 })
+
 export class HoverAffectDirective {
 
   @Input() appHoverAffect: string ='';
