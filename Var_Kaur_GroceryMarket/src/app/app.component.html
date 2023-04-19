@@ -1,0 +1,25 @@
+<nav>
+    <ul>
+      <li>
+        <a routerLink="list" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          Product List
+        </a>
+      </li>
+      <li>
+        <a routerLink="detail/2" routerLinkActive="active">Product ID 2</a>
+      </li>
+      <li>
+        <a routerLink="pagewillnotbefound" routerLinkActive="active">
+          Invalid page link
+        </a>
+      </li>
+    </ul>
+  </nav>
+<app-messagess></app-messagess>
+<!-- <div class="divcont"><input class="inputvalue" [(ngModel)]="cardId" type="number" id="search" name="search"> 
+<button class="button" (click)="searchCard()" type="button">Search</button></div> -->
+
+
+<router-outlet></router-outlet>
+ 
+
